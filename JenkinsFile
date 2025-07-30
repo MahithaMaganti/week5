@@ -4,9 +4,9 @@ pipeline {
     stages {
         stage('Hello') {
             steps {
-                echo 'Hello World'
-                echo 'javac Hello1.java'
-                echo 'java Hello1'
+                 bat 'echo "Building"'
+                 bat 'javac Hello1.java'
+                 bat 'java Hello1'
             }
         }
     }
